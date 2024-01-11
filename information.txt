@@ -1,0 +1,46 @@
+tbl_user{
+    id              = int(primary key)
+    username        = vacrhar(255)
+    email           = varchar(255)
+    password        = varchar(255)
+    profile         = varchar(255)
+}
+tbl_logo{
+    id              = int(primary key)
+    thumbnail       = varchar(255)
+    status(header,footer) = char(6)
+    post_date       = date(current_time_stamp)
+}
+tbl_news{
+    id              = int(primary key)
+    title           = varchar(255)
+    description     = text
+    post_date       = date(current_time_stamp)
+    banner          = varchr(255)
+    news_type(nation,international)      = char(15)
+    category(stort, socail,entertanment) = char(15)
+    viewer          = int
+    author          = int
+}
+tbl_about_us{
+    id              = int(primary key)
+    description     = text
+    post_date       = date(current_time_stamp)
+}
+tbl_follow_us{
+    id              = int(primary key)
+    label           = varchar(255)
+    thumbnail       = varchar(255)
+    url             = varchar(255)
+    status(follow us, footer) = char(10)
+    post_date       = date(current_time_stamp)
+}
+tbl_feedback{
+    id              = int(primary key)
+    username        = varchar(255)
+    email           = vacrhar(255)
+    telephone       = varchar(255)
+    address         = vacrhar(255)
+    message         = text
+    feedback_date   = date(current_time_stamp)
+}
